@@ -26,6 +26,11 @@
 
 **Logic:** Keep checking for numbers starting from 2, that can divide the number and do that until i^2 becomes greater than the number
 
+## Problem 4: Largest Palindrome ProductThe Problem: Find the largest palindrome made from the product of two 3-digit numbers.
+
+**The Strategy:** Use top-down generation. Instead of checking all products, construct 6-digit palindromes starting from 999,999 and work downwards. The first one that can be factored into two 3-digit numbers is the answer
+.
+**Logic:** The algorithm generates palindromes by mirroring 3-digit integers starting from 999 and checks if they can be factored into two 3-digit numbers. For each palindrome, it tests divisors from 999 down to the square root of the palindrome; if a divisor is found and the resulting quotient is also a 3-digit number, the search immediately terminates and returns that palindrome.
 
 
 
